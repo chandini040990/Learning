@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+
+    </title>
+</head>
+<body>
+
+
+<script>
+// const person = {
+//     name: "chand",
+//     city:"chennai",
+//     country:"india"
+// }
+
+// localStorage.setItem("chandini",JSON.stringify(person));
+
+// const person1 = `{"name":"venkat","city":"chennai"}`;
+// //json.parse going to convert string into object
+
+// const jsonParse = JSON.parse(person1);
+// console.log(jsonParse.name);
+// console.log(jsonParse.city);
+
+fetch("https://jsonplaceholder.typicode.com/posts") //this is getting data from backend
+.then(response => {//once url response is received
+if(response.status !==200){
+    throw new Error("some issues with the backend server");
+}
+return response.json();//grab json response
+})
+.then (data1 => {
+    console.log(data1)
+})
+
+.catch (error => {
+console.log(error.message)
+})
+
+fetch("https://jsonplaceholder.typicode.com/posts/1") //this is getting data from backend
+.then(response => {//once url response is received
+if(response.status !==200){
+    throw new Error("some issues with the backend server");
+}
+return response.json();//grab json response
+})
+.then (data1 => {
+    console.log(data1)
+})
+
+.catch (error => {
+console.log(error.message)
+})
+
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+layouts and rwd
+
+container: addes the centerd responsive container
+
+mx-auto: centers the container horizontally
+
+sm, md, lg, xl, 2xl -> controls the max-width at different breakpoints
+
+sm(small) : targets the screen size > 640px
+
+md > 768px
+
+lg > 1024px
+
+xl > 1280
+
+2xl > 1536

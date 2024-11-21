@@ -1,0 +1,41 @@
+functions in javascript
+
+in javascript a function is a block of reusable code that performs the specific task.
+Functions allow us to encapsulate the logic, making our code modular, and we can 
+easily maintain the code and it will more readable.
+
+There are different way to define the functions in javascript
+
+1) Function Declaration 
+
+A function can be declared using the "function" keyword.
+
+//function functionName
+
+
+2) Function expression:
+
+A function can also be defined as an expression. in this case, the function is assgined to variable.
+
+3) Arrow Functions
+Arrow functions provide a more concise way to write the functions. 
+
+4) IIFE (Immediately invoked function expression)
+
+An IIFE is a function that is exectued Immediately after it is defined.
+
+5) anonymous function : // a fuction without the function name is nothing anonoymous function 
+
+6) Parametes and arguments
+Functions can accept Parametes. if we wanted to add the default pareamter value
+
+7) HOF
+higher order functions
+A higher function is a function that acceps another function as an argument.
+
+callback, callback hell
+
+
+
+
+

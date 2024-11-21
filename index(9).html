@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Shopping website
+    </title>
+    <style>
+        header {
+            padding: 16px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 32px;
+        }
+
+        .flex-item {
+            background-color: orange;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 16px;
+            margin: 16px;
+            width: 80%;
+
+        }
+
+        @media screen and (max-width: 576px) {
+
+            .flex-container {
+                flex-direction: column;
+            }
+
+            .flex-item {
+                background-color: rgb(56, 10, 238);
+                border: 5px solid black;
+                width: 90%;
+            }
+
+
+        }
+
+        @media screen and (min-width:576px) and (max-width: 768px) {
+            .flex-container {
+                flex-direction: row;
+            }
+
+            .flex-item {
+                background-color: rgb(13, 245, 156);
+                width: 45%;
+            }
+        }
+
+
+        @media screen and (min-width: 768px) {
+
+            .flex-item {
+                background-color: rgb(224, 76, 8);
+                width: 45%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>This is media query class</h1>
+    </header>
+
+    <main>
+        <div class="flex-container">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+            <div class="flex-item">Item 4</div>
+            <div class="flex-item">Item 5</div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; All rights reserved</p>
+    </footer>
+
+
+</body>
+
+</html>
+
+
+
+<!-- flex
+float
+column
+navigation bar
+positions 
+z-index
+adding overlays
+grid -> two dimentional  
+
+media queries used to apply differnt styles to the website based on the device dimenstions
+
+@media media-type and(condition){
+}
+
+
+
+
+break points for the devices
+
+1) extra small devices (phones)
+    max-width: 576px
+    media query: @media (max-width: 586px)
+
+2) small devices (tablets)
+min width: 576px
+max width: 768px
+
+@media screen (min-width: 576px) and (max-width: 768px)
+
+
+3) medium devices (tablets in the landscape)
+min width: 768px
+max width: 992px
+
+@media screen (min-width: 768px) and (max-width: 992px)
+
+
+4) large devices(desktops)
+min: 992px
+max: 1200px
+
+@media screen (min-width: 992px) and (max-width: 1200px)
+
+5) extra large devices (large desktops)
+
+min width: 1200px
+@media screen (min-width: 1200px)
+
+-->

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Shopping website
+    </title>
+    <style>
+        .grid-container {
+            display: grid;
+            /* grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: 1fr 1fr 1fr 4fr;
+            grid-template-columns: 500px 1fr;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+            grid-template-columns: repeat(4, 100px);
+            grid-template-rows: repeat(4, 100px);
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+
+            grid-gap: 10px;
+        }
+
+        .grid-item {
+            background-color: orange;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 20px;
+            border: 2px solid green;
+            
+        }
+
+        .grid-container1 {
+            display: grid;
+            grid-template-columns: 500px 1fr;
+            grid-gap: 10px;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <div class = "grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+    </div>
+
+    <div class = "grid-container1">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+       
+    </div>
+ 
+
+    
+</body>
+</html>
+
+<!-- 
+
+layout css 
+float is used to position the elements to the left or right with in the parent container
+
+
+
+flex
+float
+column
+navigation bar
+positions 
+z-index
+adding overlays
+grid -> two dimentional 
+-->
+
+
+

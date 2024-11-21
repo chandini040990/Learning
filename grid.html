@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Fresh Harvest
+        </title>
+       <link rel="icon" href="https://media.istockphoto.com/id/477416988/vector/flat-shopping-cart.jpg?s=612x612&w=is&k=20&c=dfK84u7ovHzT9SHItcYvgpfyBuw0RHvtU_J2pTwqeHo=">
+       <meta name="'viewport" content="width=device-width,initial-scale=1.0">
+       <meta name="keywords" content="Fresh Vegetables,Buy veggies and fruits">
+       <meta name="description" content="Cheap and best vegetables and fruits">
+       <link rel="stylesheets" href="./css/style.css">
+       <meta chartset="UTF-8">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+     
+        .mainmenu {
+           background-color: rgb(56, 129, 56);
+            ;
+            /*font-weight:normal;*/
+            font-size:20px;
+          /*  color: black;*/
+            padding: 5px;
+            position: sticky; 
+            border-color: black;
+            top: 0;
+
+        }
+        .logo {
+           /* background-color: skyblue;*/
+            font-weight:bold;
+            font-size:50px;
+          /*  color: rgba(220, 39, 205, 0.818);*/
+            padding: 5px;
+            position: relative; 
+            top: 0;
+            padding-bottom: 30px;
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-bottom: 40px;
+
+        }
+       .logo.img {
+            position:absolute;
+            top:0;
+           height:100px;
+            width:99%;
+           z-index:-1;
+           background-color: white;
+           /* opacity: 0.8; */
+        
+        }
+        .navbar {
+            position:relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border:3px;
+            border-color: black;
+            border-width: 2px;
+            background-color: #80c483;
+            padding: 10px 20px;
+            cursor:pointer;
+        }
+
+        .nav-links {
+            position:relative;
+            display: flex;
+            list-style-type: none;
+
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            position:relative;
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+        }
+
+        .nav-links a:hover {
+            background-color: rgb(120, 110, 110);
+            text-decoration: underline;
+            border-radius: 5px;
+        }
+
+         a:active {
+            color: #080c08d7;
+        }
+    
+        .marq {
+            color:rgb(38, 91, 42);
+            font-size: 50px;
+            font-weight: bold;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .footer {
+            position:fixed;
+            display:flex;
+            background-color: rgb(56, 129, 56);
+            justify-content: center;
+            bottom:0;
+            width:100%;
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+    
+        }
+     
+        .button
+        {
+            text-align:center;
+            color:rgb(57, 148, 209);
+            cursor:pointer;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .grid-container {
+        display: grid;
+        margin:20px;
+        margin-top: 20px;
+        margin-left: 20px; 
+        margin-right: 20px;
+        margin-bottom: 20px;
+        padding:20px;
+        grid-template-columns: auto auto auto;
+        top:10px;
+      
+        }
+        .grid-item {
+            top:0;
+            padding: 2px;
+            background-color: white;
+            border: 1px solid black;
+            margin: 5px;
+            text-align:left;
+            font-weight:200;
+            color: black;
+            font-size: 25px;
+            scroll-behavior: smooth;
+        }
+            
+        .align {
+            margin-left:100px;
+            justify-content: right;
+            
+        } 
+
+    </style>
+</head>
+
+<body>
+  
+  <div class="mainmenu">
+    <ul class="nav-links">
+    <li>
+       
+            <img src ="https://cdn-icons-png.flaticon.com/128/3081/3081559.png" height=20px width=20px aria-readonly>Fresh Harvest</img>
+       
+         </li>
+            <li>
+               
+                <img src="https://cdn-icons-png.flaticon.com/128/3063/3063755.png"height=20px width=20px aria-readonly>Home Delivery</img>
+               
+        </li>
+            <li><a href = "#Search">
+                <input type="text" placeholder="Search here"> </a> </li>
+                
+                <button>Search</button>
+                <div class="button"></div>
+           
+            <li><div class="align">
+                <img src="https://cdn-icons-png.flaticon.com/128/5264/5264565.png" height=20px width=20px> Login/Signup</img>
+            </div>
+            </li>
+            <li><div class="align">
+                <img src="https://cdn-icons-png.flaticon.com/128/3514/3514491.png" height=20px width=20px>Cart</img>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+
+     
+    <div class="navbar">
+        <ul class="nav-links">
+            <li><a href = "#Home"><img src="https://cdn-icons-png.flaticon.com/512/25/25694.png"height=20px width=20px>Home</a></li>
+            <li><a href = "#Menu"><img src="https://cdn-icons-png.flaticon.com/128/18111/18111996.png"height=20px width=20px>Menu</a></li>
+            <li><a href = "#Cart"><img src="https://cdn-icons-png.flaticon.com/128/3514/3514491.png"height=20px width=20px>Cart</a></li>
+            <li><a href = "#Contact"><img src="https://cdn-icons-png.flaticon.com/128/7269/7269995.png"height=20px width=20px>Contact</a></li>
+    </ul>
+    </div>
+
+    <div class="logo">
+        <marquee class="marq" background-color="Green" 
+        direction="left" loop="">
+        <p>Fresh and Healthy !!!! Buy Today !!!!<p>
+        </marquee>
+
+        <div class="img">
+            <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR29DUulDQVhyCUh4RsFpbnvkifK50_T8ePuQ&s" height=200px width=30%></img>
+            <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSPK9QxgolaQf1FI-moy-uXDDgReIZ4iLE4A&s" height=200px width=40%></img>
+            <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTJrbvQGt1nFHUMav7ImgG4fNUtxD15mjEVA&s" height=200px width=25%></img>
+            
+    </div>
+        </div>
+    
+    <div class="grid-container">
+        
+        <div class="grid-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiH7CY7zNTI1QUat7988UJkFOkc9tyd6kFFw&s">
+            <div class="text">
+            Onion Rs.100/kg</div>
+            <button>Add to Cart</button><input type ="number" min = "1" max="10">
+            <div class="button"></div>
+        </div>
+
+        <div class="grid-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ29ruI0u1VR1cPxITYEIf9zzOWPuQBbsndlQ&s">
+            <div class="text">
+            Tomato Rs.120/kg</div>
+            <button>Add to Cart</button> <input type ="number" min = "1" max="10">
+            <div class="button"></div>
+        </div>
+
+        <div class="grid-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScaVGKDVkjFkgOkybMAqGujTD0MIHyDjbBzQ&s">
+            <div class="text"> Peas Rs.80/kg</div>
+            <button>Add to Cart</button> <input type ="number" min = "1" max="10">
+            <div class="button"></div>
+        </div>
+
+        <div class="grid-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ61zHQT85ttsZhaTN7eFuAjrz6c0VkbSY1ew&s">
+            <div class="text"> Cabbage Rs.60/kg</div>
+            <button>Add to Cart</button> <input type ="number" min = "1" max="10">
+            <div class="button"></div>
+        </div>
+
+        <div class="grid-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRvjlyvl4WdP4k9HFgTpAzvtfrB4Q65jsuVQ&s">
+            <div class="text"> Carrot Rs.50/kg </div>
+            <button>Add to Cart</button> <input type ="number" min = "1" max="10">
+            <div class="button"></div>
+        </div>
+
+        <div class="grid-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxMRcEZDxZlFwlk2YbAvxP7jNpfPSVSMARlsO7QdQGs3K_9ZxpWe8R8qY&s">
+            <div class="text">
+            Brinjal Rs.30/kg</div>
+            <button>Add to Cart</button> <input type ="number" min = "1" max="10">
+            <div class="button"></div>
+        </div>
+
+        <div class="grid-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKWMz2SgEDmt9IdGqG2lpDAPqnF0_ZiqOlzQ&s">
+            <div class="text">
+            Ginger Rs.20/kg</div>
+            <button>Add to Cart</button> <input type ="number" min = "1" max="10">
+            <div class="button"></div>
+        </div>
+
+        <div class="grid-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl9snbKODRFWXd6z0Ek4ZESMws4ru52oao2A&s"><br>
+            <div class="text">
+            Coriander Leaves Rs.10
+            </div>
+            <button>Add to Cart</button> <input type ="number" min = "1" max="10">
+            <div class="button"></div>
+        </div>
+    </div>
+
+    
+</main>
+
+</body>
+    <footer>
+        <div class="footer">
+        <p>&copy; All Rights Reserved</p>
+        </div>
+    </footer>
+
+</html>

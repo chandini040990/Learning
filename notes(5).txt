@@ -1,0 +1,36 @@
+javascript conditions
+
+In javascript conditions are used to perform different actions based on the different conditions.
+
+if state
+else statment
+else if statement
+
+// switch statement in javascript is used to perfrom different actions based on the value of the variable or expression.
+
+
+switch(expression){
+    case value1:
+    //code to run
+    break;
+
+    case value2: 
+    //code to run 
+    break;
+
+    case value3:
+    //code to run
+    break;
+}
+
+
+
+// while and do..while loops in javascript
+
+both while and do..while loops are used to execute a block of code repeatedly as long as the specified condition is true
+
+while: loop ....first it checks the condition, then executes the block of the code if the condition is true
+
+do...while: executes the block first, then checks the condition. 
+
+

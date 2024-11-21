@@ -1,0 +1,25 @@
+// try {
+    //     // let somevalue = 10
+    //     let value = somevalue + 10; //20
+    //     console.log(value)
+    // } catch (err) {
+    //     console.log("Error " + err.message)
+    // }
+
+    // function checkage(age){
+    //     if(age < 18){
+    //         // manullay we are throwing the error
+    //         throw new Error("Age must be 18 or above 18")
+    //     }
+    //     return "possible to vote"
+    // }
+
+    // try {
+    //     let result = checkage(10);
+    //     console.log(result)
+    // }catch(err){
+    //     console.log("Error is " + err.message)
+    // }
+
+    // let result = 5 * 5;
+    // console.log("result", result)

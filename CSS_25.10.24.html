@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Shopping website
+    </title>
+    <style>
+        .container {
+            display: flex;
+            /* flex-direction: row;
+            flex-direction: row-reverse;*/
+            /*flex-direction: column;
+            flex-direction: column-reverse;*/
+            background-color: orange;
+            flex-wrap: wrap;
+            flex-direction: row;
+           /* flex-wrap: wrap-reverse;
+            flex-wrap: nowrap;
+            flex-wrap: wrap; */
+            /* short hand notation */
+           /*flex-flow: column wrap;
+            align-items:center;
+            height: 400px; 
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: center;*/
+            /*justify-content: center;*/
+            /*justify-content: start; */
+            /*justify-content: end;*/  
+
+            
+        }
+        
+        .box {
+            background-color: green;
+            padding: 20px;
+            color: white;
+            border: 5px solid black;
+            margin: 5px;
+          
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div style = "order: 3" class="box">BOX 1</div>
+        <div style = "order: 4" class="box">BOX 2</div>
+        <div style = "order: 1" class="box">BOX 3</div>
+        <div style = "order: 2" class="box">BOX 4</div> 
+        <div class="box">BOX 5</div>
+        <div class="box">BOX 6</div>
+        <div class="box">BOX 7</div>
+        <div class="box">BOX 8</div> 
+        <div class="box">BOX 9</div>
+        <div class="box">BOX 1</div>
+        <div class="box">BOX 2</div>
+        <div class="box">BOX 3</div>
+        <div class="box">BOX 4</div>
+        <div class="box">BOX 5</div>
+        <div class="box">BOX 6</div>
+        <div class="box">BOX 7</div>
+        <div class="box">BOX 8</div>
+        <div class="box">BOX 9</div>
+
+        <div style = "flex-grow: 5" class="box">BOX 1</div>
+        <div style = "flex-grow: 4" class="box">BOX 2</div>
+        <div style = "flex-grow: 3" class="box">BOX 3</div>
+        <div style = "flex-grow: 1" class="box">BOX 4</div>
+
+    </div>
+
+
+    
+ </body>
+
+</html> 
+
+
+
+<!-- flexbox is the css layout that allows us for efficent alignemnt, distribution and spacing the items with in the container
+ 
+
+also if we wanted to create the responsive websites we can go with flexbox
+
+
+properties of the flexbox:
+
+display: flex -> it will defines the flex container
+
+flex-direction: 
+Specifies the direction of the flex items
+
+    row: items are placed in the row from left to right
+
+    row-reverse: items are places in a row from right to left
+
+    column: items are places in the column from top to bottom 
+
+    column-reverse: items are placed in the column from bottom to top
+
+justify-content: Defgines the alignment along with the horizaion in row mode
+
+flex-start: items are aligned to the start
+
+center: items are aligned centered
+
+flex-end: items are aligned to the end
+
+space-between: items are spaced evenly with the first item at the start and last item at the end
+
+space-around: items are placed evenly with equal space around them
+
+align items: defines the alignment along the vetical in row mode
+
+
+flex-wrap: controls whether flex items wrap to the next line when they overflow
+
+nowrap: items do not wrap
+
+wrap items wrap onto multiple lines
+
+wrap-reverse: items wrap onto  muliple lines in the reverse order
+
+ -->

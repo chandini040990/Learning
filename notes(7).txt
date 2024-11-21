@@ -1,0 +1,1 @@
+hoisting: variables and function declarations are moved (or hoisted) to the top their scope before the code is executed.

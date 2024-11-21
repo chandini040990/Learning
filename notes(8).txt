@@ -1,0 +1,26 @@
+const readline = require('readline'); //we are going to use the readline to get the input from the user
+
+//create the interface for input and output
+
+const r1 = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+})
+
+//initialize the array which hold the input data
+
+let inputLines = [];
+
+//listen the inputLines
+
+r1.on('line', (input) => {
+    inputLines.push(input) //adding the each line to the input
+    
+    if(inputLines.length === 2){
+        console.log(inputLines[0]);
+        console.log(inputLines[1])
+        
+        r1.close();
+    }
+})
+

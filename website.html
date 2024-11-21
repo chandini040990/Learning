@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Fresh Harvest
+        </title>
+       <link rel="icon" href="https://media.istockphoto.com/id/477416988/vector/flat-shopping-cart.jpg?s=612x612&w=is&k=20&c=dfK84u7ovHzT9SHItcYvgpfyBuw0RHvtU_J2pTwqeHo=">
+       <meta name="'viewport" content="width=device-width,initial-scale=1.0">
+
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* background-color:rgb(244, 202, 209,0.1); */
+           /* box shadow :20px;*/
+        }
+     
+        .mainmenu {
+           background-color: rgb(56, 129, 56);
+            ;
+            /*font-weight:normal;*/
+            font-size:20px;
+          /*  color: black;*/
+            padding: 5px;
+            position: sticky; 
+            border-color: black;
+            top: 0;
+
+        }
+        .logo {
+           /* background-color: skyblue;*/
+            ;
+            font-weight:bold;
+            font-size:50px;
+          /*  color: rgba(220, 39, 205, 0.818);*/
+            padding: 5px;
+            position: sticky; 
+            top: 0;
+
+        }
+        .img {
+            position:absolute;
+            top:0;
+           height:100px;
+            width:99%;
+           z-index:-1;
+           background-color: white;
+        /*   filter: blur(0px);*/
+
+        }
+        .navbar {
+            position:sticky;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border:3px;
+            border-color: black;
+            border-width: 2px;
+            background-color: #80c483;
+            padding: 10px 20px;
+            cursor:pointer;
+        }
+
+        .nav-links {
+            position:sticky;
+            display: flex;
+            list-style-type: none;
+
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            position:sticky;
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+        }
+
+        .nav-links a:hover {
+            background-color: #701d1d;
+            text-decoration: underline;
+            border-radius: 5px;
+        }
+
+         a:active {
+        /*    background-color: #38ca38;*/
+            color: #080c08d7;
+        }
+    
+        .marq {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .footer {
+            position:fixed;
+            display:flex;
+            background-color: rgb(56, 129, 56);
+            justify-content: center;
+            bottom:0;
+            width:100%;
+            color: black;
+            font-size: 24px;
+            font-weight: bold;
+    
+        }
+     
+        .button
+        {
+            text-align:center;
+            color:rgb(57, 148, 209);
+            cursor:pointer;
+            font-size: 24px;
+            font-weight: bold;
+          /*  text-decoration: underline;*/
+        }
+
+        .container {
+            width: 100%;
+            background-color:none;
+            padding: 20px;
+            overflow: auto;
+        }
+
+        
+        .left {
+            float: left;
+            width: 45%;
+            background-color: white;
+            color: white;
+            padding: 10px;
+            margin-right: 5%;
+        }
+
+        .right {
+            float: right;
+            width: 45%;
+            background-color:white;
+            color: black;
+            padding: 20px;
+            
+        }
+        .text {
+            text-align: left ;
+            font-weight:bold;
+            color: black;
+            font-size: 15px;
+           
+        }
+
+    </style>
+</head>
+
+<body>
+  
+  <div class="mainmenu">
+    <ul class="nav-links">
+    <li>
+        <!-- /*a href = "#Shopping">*/ -->
+            <img src ="https://cdn-icons-png.flaticon.com/128/3081/3081559.png" height=20px width=20px aria-readonly>Fresh Harvest</img>
+          <!-- /*   <p style display= float height:10px width:10px>Shopping</p>*/ -->
+    
+            <!-- </a> -->
+         </li>
+            <li>
+                <!-- <a href = "#Homedelivery">  -->
+                <img src="https://cdn-icons-png.flaticon.com/128/3063/3063755.png"height=20px width=20px aria-readonly>Home Delivery</img>
+                <!-- <p style display= float height:10px width:10px>Home Deivery</p> -->
+            <!-- </a>  -->
+        </li>
+            <li><a href = "#Search">
+                <input type="text" placeholder="Search here"> </a> </li>
+                
+                <button>Search</button>
+                <div class="button"></div>
+           
+            </div>
+        </ul>
+    </div>
+    
+
+     
+    <div class="navbar">
+        <ul class="nav-links">
+            <li><a href = "#Home"><img src="https://cdn-icons-png.flaticon.com/512/25/25694.png"height=20px width=20px>Home</a></li>
+            <li><a href = "#Menu"><img src="https://cdn-icons-png.flaticon.com/128/18111/18111996.png"height=20px width=20px>Menu</a></li>
+            <li><a href = "#Cart"><img src="https://cdn-icons-png.flaticon.com/128/3514/3514491.png"height=20px width=20px>Cart</a></li>
+            <li><a href = "#Contact"><img src="https://cdn-icons-png.flaticon.com/128/7269/7269995.png"height=20px width=20px>Contact</a></li>
+    </ul>
+    </div>
+
+    <div class="logo">
+        <marquee class="marq" background-color="Green" 
+        direction="left" loop="">
+        <p>Fresh and Healthy !!!! Buy Today !!!!<p>
+        </marquee>
+
+        <div class="img">
+            <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR29DUulDQVhyCUh4RsFpbnvkifK50_T8ePuQ&s" height=200px width=30%></img>
+            <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSPK9QxgolaQf1FI-moy-uXDDgReIZ4iLE4A&s" height=200px width=40%></img>
+            <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTJrbvQGt1nFHUMav7ImgG4fNUtxD15mjEVA&s" height=200px width=25%></img>
+            
+    </div>
+        </div>
+    <br><br>
+    <div class="container">
+        
+        <div class="left">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiH7CY7zNTI1QUat7988UJkFOkc9tyd6kFFw&s">
+            Onion
+            <button>Add to Cart</button>
+            <div class="button"></div>
+        </div>
+        <div class="right">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ29ruI0u1VR1cPxITYEIf9zzOWPuQBbsndlQ&s">
+            Tomato
+            <button>Add to Cart</button>
+            <div class="button"></div>
+        </div>
+        <div class="left">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScaVGKDVkjFkgOkybMAqGujTD0MIHyDjbBzQ&s">
+            Peas
+            <button>Add to Cart</button>
+            <div class="button"></div>
+        </div>
+        <div class="right">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ61zHQT85ttsZhaTN7eFuAjrz6c0VkbSY1ew&s">
+            Cabbage
+            <button>Add to Cart</button>
+            <div class="button"></div>
+        </div>
+        <div class="left">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRvjlyvl4WdP4k9HFgTpAzvtfrB4Q65jsuVQ&s">
+            Carrot
+            <button>Add to Cart</button>
+            <div class="button"></div>
+        </div>
+        <div class="right">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxMRcEZDxZlFwlk2YbAvxP7jNpfPSVSMARlsO7QdQGs3K_9ZxpWe8R8qY&s">
+            Brinjal
+            <button>Add to Cart</button>
+            <div class="button"></div>
+        </div>
+        <div class="left">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKWMz2SgEDmt9IdGqG2lpDAPqnF0_ZiqOlzQ&s">
+            <div class="text">
+            Ginger Rs.20/kg</div>
+            <!-- <p>Ginger<p> -->
+            <button>Add to Cart</button>
+            <div class="button"></div>
+        </div>
+        
+        <div class="right">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl9snbKODRFWXd6z0Ek4ZESMws4ru52oao2A&s"><br>
+            Coriander Leaves
+            
+            <button>Add to Cart</button>
+            <div class="button"></div>
+        </div>
+    </div>
+
+    
+</main>
+
+</body>
+    <footer>
+        <div class="footer">
+        <p>&copy; All Rights Reserved</p>
+        </div>
+    </footer>
+
+</html>

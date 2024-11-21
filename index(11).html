@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>This is the title of the page</title>
+</head>
+
+<body>
+    <script>
+
+        // function addNumbers(a, b, functiontobecalled) {
+        //     let sum = a + b;
+        //     functiontobecalled(sum)
+        // }
+
+        // function displayResult(result) {
+        //     console.log("the result is " + result)
+        // }
+
+        // addNumbers(5, 10, displayResult)
+
+
+        // function addNumbers(a, b, displayResult) {
+        //     let sum = a + b
+        //     displayResult(sum)
+        // }
+
+        // function substraction(a, b, displayResult){
+        //     let sub = a - b;
+        //     displayResult(sub)
+        // }
+
+        // function multiply(a, b, displayResult){
+        //     let multiply = a * b;
+        //     displayResult(multiply)
+        // }
+
+        // function displayResult(result){
+        //     console.log("result", result)
+        // }
+
+        // addNumbers(10, 30, displayResult)
+        // substraction(10, 5, displayResult)
+        // multiply(10, 5, displayResult)
+
+
+        // good morning greet
+        //good evening greet
+
+        // function greet(name, callback){
+        //     console.log("hello. " + name + "!")
+        //     callback(name)
+        // }
+
+        // function morningGreet(){
+        //     console.log("good morning" + name)
+        // }
+
+        // function eveningGreet(){
+        //     console.log("good evening" + name)
+        // }
+
+        // const currentHour = new Date().getHours();
+        // if(currentHour < 12){
+        //     greet("Venkat", morningGreet)
+        // } else {
+        //     greet("Venkat", eveningGreet)
+        // }
+
+        // function greet(name, callback) {
+        //     console.log("hello. " + name + "!")
+        //     callback(name)
+        // }
+
+        // function morningGreet(name) {
+        //     console.log("good morning" + name)
+        // }
+
+        // function eveningGreet(name) {
+        //     console.log("good evening" + name)
+        // }
+
+        // const currentHour = new Date().getHours();
+        // if (currentHour < 12) {
+        //     greet("Venkat ", morningGreet)
+        // } else {
+        //     greet("Venkat ", eveningGreet)
+        // }
+
+
+        // fetch the user data
+        function fetchUserData(userId, callback) {
+            setTimeout(() => {
+                console.log(`user data is fetched : ${userId}`)
+                const user = { id: userId, name: "venkat" };
+                callback(user)
+            }, 1000);
+        }
+
+        // fetch the posts for the user 1
+
+        function fetchUserPosts(user, callback) {
+            setTimeout(function () {
+                console.log(`fetching the posts for the user ${user.name}`);
+                const posts = [
+                    { id: 1, title: "Post 1", userId: user.id },
+                    { id: 2, title: "Post 2", userId: user.id },
+                ];
+                callback(posts)
+            }, 1000)
+        }
+
+        // fetch the commetns for the posts
+
+        function fetchCommentsPosts(post, callback) {
+            setTimeout(function () {
+                console.log(`fetching the comments for the user ${post.title}`);
+                const comments = [
+                    { postId: post.id, comment: "Great Post you have added" },
+                    { postId: post.id, comment: "Nice Post you have added" },
+                ];
+                callback(comments)
+            }, 1000)
+        }
+
+
+        fetchUserData(1, function (user) {
+            fetchUserPosts(user, function (posts) {
+                posts.forEach(function (post) {
+                    fetchCommentsPosts(post, function (comments) {
+                        console.log(`comments for ${post.title}`, comments)
+                    })
+                })
+            })
+        })
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 12px rgba(0,0,0,0.7);
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    font-size: 24px;
+    color: #555;
+    margin-top: 10px;
+    display: block;
+}
+
+input[type = "text"],
+input[type = "email"],
+input[type = "password"],
+input[type = "date"],
+#guests, 
+#room {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 3px solid orchid;
+    border-radius: 7px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.9s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: cadetblue;
+}
+
+a {
+    display: block;
+    text-align: center;
+    color: orangered;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+

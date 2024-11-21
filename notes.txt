@@ -1,0 +1,48 @@
+flex utility helps to control how elements are aligned and distributed in the flex container.
+
+1) Flex direction controls the direction of the flex items with in the flex container
+
+flex-row: align items in the horizonatal row(default)
+
+flex-row-reverse: in the reverse
+
+flex-col : align items in the vertical column
+
+flex-col-reverse: the reverse order
+
+2) flex wrap:
+controls the elements to wrap or not
+
+flex-nowrap: it forces the items to stay in a single line
+
+flex-wrap: Allows the tiems to wrap into muliple lines
+
+flex-wrap-reverse: allows items to wrap onto muliples lines in the reverse order
+
+
+3) flex justify content
+
+controls the alignment of the flex items 
+
+justify-start: align items to start of the container
+
+justify-center: centers the items in the container
+
+justify-end: align items to the end of the container
+
+justify-between 
+
+justify-around
+
+justify-evenly
+
+order
+
+content-center
+content-end
+content-between
+
+shrink 
+
+basis
+

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Shopping website
+    </title>
+    <style>
+        header {
+            padding: 16px;
+        }
+
+        .responsive-section {
+            padding: 32px;
+            background-color: orange;
+        }
+
+        @media screen and (max-width: 576px) {
+
+            header {
+                background-color: pink;
+            }
+
+            .responsive-section {
+                padding: 32px;
+                background-color: seagreen;
+            }
+
+        }
+
+        @media screen and (min-width:576px) and (max-width: 768px){
+            header {
+                background-color: red;
+            }
+
+            .responsive-section {
+                padding: 32px;
+                background-color: sienna;
+            }
+        }
+
+        
+        @media screen and (min-width: 768px){
+            header {
+                background-color: aqua;
+            }
+            header::before {
+                content: "hello"
+            }
+
+            .responsive-section {
+                padding: 32px;
+                background-color: azure;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>This is media query class</h1>
+    </header>
+
+    <main>
+        <section class='responsive-section'>
+            <h2>Welcome to guvi</h2>
+            <img src="https://www.guvi.in/assets/CPYoUJqK-guvilogo-hcl.webp">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; All rights reserved</p>
+    </footer>
+
+
+</body>
+
+</html>
+
+
+
+<!-- flex
+float
+column
+navigation bar
+positions 
+z-index
+adding overlays
+grid -> two dimentional  
+
+media queries used to apply differnt styles to the website based on the device dimenstions
+
+@media media-type and(condition){
+}
+
+
+
+
+break points for the devices
+
+1) extra small devices (phones)
+    max-width: 576px
+    media query: @media (max-width: 586px)
+
+2) small devices (tablets)
+min width: 576px
+max width: 768px
+
+@media screen (min-width: 576px) and (max-width: 768px)
+
+
+3) medium devices (tablets in the landscape)
+min width: 768px
+max width: 992px
+
+@media screen (min-width: 768px) and (max-width: 992px)
+
+
+4) large devices(desktops)
+min: 992px
+max: 1200px
+
+@media screen (min-width: 992px) and (max-width: 1200px)
+
+5) extra large devices (large desktops)
+
+min width: 1200px
+@media screen (min-width: 1200px)
+
+-->

@@ -1,0 +1,152 @@
+  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+     
+    
+        .navbar {
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+        background-color: grey;
+        color:#080c08d7;
+        padding:1rem;
+        position:fixed;
+        width:100%;
+        top:0%;
+        z-index:100;
+        }
+
+        .navbar .logo {
+          font-size:1.5rem;
+
+        }
+
+        .navbar nav a {
+            color:black;
+            margin-left:1rem;
+            text-decoration:none;
+        }
+
+        .navbar  nav a:hover {
+            color:white;
+            text-decoration: underline;
+           
+        }
+
+        .hero{
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            padding-top:5rem;
+            background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsEDrjgy26oE8BJR_gookOcFiNDqOxAUcu_CHmyGuPZD7gumRlVhPXdQw&s');
+            background-repeat:no-repeat;
+            background-size:cover;
+
+        }
+
+        .hero h1{
+            font-size:45px;
+            color:rgb(238, 234, 243);
+            background-color:coral;
+            border-radius:10px;
+            padding:20px;
+
+        }
+        
+        .hero p{
+            font-size:36px;
+            background-color:coral;
+            border-radius:10px;
+            padding:20px;
+        }
+.about{
+    border-bottom-color:green;
+    border-bottom-style:dashed;
+    border-bottom-width:2px;
+    white-space:nowrap;
+    text-align:center;
+    width:auto;
+    margin-top:50px;
+    font-size:36px;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+.about section{
+    margin-top:2%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap:90px;
+
+
+}
+ .about-section p{
+    font-size:20px;
+    width:50%;
+    text-align:center;
+ }
+ .about-section img{
+   height:200px;
+   width:200px;
+ }
+
+ .section{
+    padding:4rem 1rem;
+    text-align:center;
+  }
+
+  .destinations{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1rem;
+    justify-content: center;
+    margin-top:25px;
+  }
+
+
+  .destination-card{
+display:flex;
+flex-direction:row;
+background-color:orange;
+padding:2rem;
+border:4px solid black;
+border-radius:5px;
+width:400px;
+align-items: center;
+transition:transform 0.3s;
+font-size:24px;
+text-transform:capitalize;
+
+  }
+
+  .destination-card:hover,  .destination-card1:hover
+   {
+    transform:scale(1.05);
+   
+}
+.destination-card img,  .destination-card1 img
+{
+width:150px;
+height:150px;
+border-radius:5px;
+margin-left:16px;
+
+}
+
+.destination1-card{
+    display:flex;
+    flex-direction:row;
+    background-color:rgb(164, 233, 118);
+    padding:2rem;
+    border:4px solid black;
+    border-radius:5px;
+    width:400px;
+    align-items: center;
+    transition:transform 0.3s;
+    font-size:24px;
+    text-transform:capitalize;
+}
